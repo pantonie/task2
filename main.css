@@ -50,6 +50,9 @@ a {
 .icon-temp-y {
     content: url(./assets/icon_temperature_2@1x.png);
 }
+.icon-temp-y-big {
+    content: url(./assets/icon_temperature_2@2x.png);
+}
 .icon-sun-y {
     content: url(./assets/icon_sun_2@1x.png);
 }
@@ -277,11 +280,78 @@ footer span {
     overflow: auto; /* Enable scroll if needed */
     background-color: rgb(0,0,0); /* Fallback color */
     background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    overflow: hidden;
+
 }
 .modal-content {
+    width: 630px;
     background-color: #fefefe;
     margin: 15% auto; /* 15% from the top and centered */
     padding: 20px;
     border: 1px solid #888;
-    width: 80%; /* Could be more or less, depending on screen size */
+    border-radius: 20px;
+}
+.modal-content .status{
+    font-size: 14px;
+    font-weight: normal;
+}
+
+.modal-buttons{
+    display: flex;
+    flex-direction: row;
+    height: 40px;
+    margin-top: -13%;
+}
+/*Slider*/
+.slidercontainer{
+    display: flex;
+    flex-direction: column;
+    width: 580px;
+    height: 60px;
+    background-image: linear-gradient(90deg, #068FFF 2%, #FFD800 51%, #F76B1C 100%);
+    border-radius: 30px;
+    justify-content: center;
+    align-items: center;
+    color:#FFFFFF;
+}
+.slidercontainer .left-text{
+    position: absolute;
+    margin-left: -260px;
+}
+.slidercontainer .right-text{
+    position: absolute;
+    margin-left: 260px;
+}
+.slider {
+    width: 580px;
+    height: 60px;
+    margin: 0;
+    overflow: hidden;
+    -webkit-appearance: none;
+    appearance: none;
+    background: transparent;
+}
+input[type=range]::-webkit-slider-thumb{
+    position:relative;
+    width: 60px;
+    height: 60px;
+    -webkit-appearance: none;
+    border: 3px solid rgb(231,164,13);
+    box-shadow: 0 0 0 3px #FFFFFF;
+    border-radius: 50%;
+    background: rgb(253,188,7);
+    cursor: pointer;
+}
+/*Modal*/
+.modalHead{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 27px;
+}
+.data {
+    display: inline-flex;
+}
+.data .digits{
+    font-size: 36px;
 }

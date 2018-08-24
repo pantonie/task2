@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Яндекс Дом</title>
     <link rel='stylesheet' href='./main.css'>
+    <style data="slider" type="text/css"></style>
 </head>
 <body>
 <header>
@@ -198,7 +199,34 @@
 </footer>
 <div id='modal' class='modal'>
     <div class='modal-content'>
-        
+        <div class="modalHead">
+            <div class='text'>
+                Elgato Eve Degree Connected
+            </div>
+            <div class='data'>
+                <div id='modal-temperature' class="digits">+23</div>
+                <div class='icon-temp-y-big'></div>
+            </div>
+        </div>
+        <div class='status'>
+            Включено
+        </div>
+        <div class='buttons'>
+            <div class='btn yellow'>Вручную</div>
+            <div class='btn'>Холодно</div>
+            <div class='btn'>Тепло</div>
+            <div class='btn'>Жарко</div>
+        </div>
+        <div class='slidercontainer'>
+            <input id='tempSlider' type="range" min="-10" max="30" value="23" class="slider">
+            <div class='left-text'>-10</div>
+            <div class='right-text'>+30</div>
+        </div>
+
+    </div>
+    <div class='modal-buttons'>
+        <div class="btn yellow">Применить</div>
+        <div class="btn white">Закрыть</div>
     </div>
 </div>
 
