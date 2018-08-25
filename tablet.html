@@ -5,6 +5,7 @@
     <title>Яндекс Дом</title>
     <link rel='stylesheet' href='./main.css'>
     <style data="slider" type="text/css"></style>
+    <style data="slider1" type="text/css"></style>
 </head>
 <body>
 <header>
@@ -47,7 +48,7 @@
                         <div class='info-header'>Phillips Cooler</div>
                         <div class='info-content'>Начнет охлаждать в 16:30</div>
                     </div>
-                    <div class='info'>
+                    <div class='info' id="click3">
                         <div class='icon'><span class='icon-sun'></span></div>
                         <div class='info-header'>Xiaomi Yeelight LED Smart Bulb</div>
                         <div class='info-content'>Включится в 17:00</div>
@@ -96,7 +97,7 @@
                 <div class='info-header'>Набрать горячую ванну</div>
                 <div class='info-content'>Начнётся в 18:00</div>
             </div>
-            <div class='info'>
+            <div class='info' id='click2'>
                 <div class='icon'><span class='icon-temp-y'></span></div>
                 <div class='info-header'>Сделать пол тёплым во всей квартире</div>
             </div>
@@ -197,7 +198,7 @@
         <span>© 2001–2017  ООО «Яндекс»</span>
     </div>
 </footer>
-<div id='modal' class='modal'>
+<div id='modal1' class='modal'>
     <div class='modal-content'>
         <div class="modalHead">
             <div class='text'>
@@ -221,6 +222,66 @@
             <input id='tempSlider' type="range" min="-10" max="30" value="23" class="slider">
             <div class='left-text'>-10</div>
             <div class='right-text'>+30</div>
+        </div>
+
+    </div>
+    <div class='modal-buttons'>
+        <div class="btn yellow">Применить</div>
+        <div class="btn white">Закрыть</div>
+    </div>
+</div>
+<div id='modal2' class='modal'>
+    <div class='modal-content'>
+        <div class="modalHead">
+            <div class='text'>
+                Xiaomi Warm Floor
+            </div>
+            <div class='data'>
+                <div id='floor-temperature' class="digits">+23</div>
+                <div class='icon-temp-y-big'></div>
+            </div>
+        </div>
+        <div class='status'>
+            Включено
+        </div>
+        <div class='dimmer-container'>
+            <div class='dimmer'>
+                +23
+            </div>
+            <div class="control"></div>
+
+        </div>
+
+    </div>
+    <div class='modal-buttons'>
+        <div class="btn yellow">Применить</div>
+        <div class="btn white">Закрыть</div>
+    </div>
+</div>
+<div id='modal3' class='modal'>
+    <div class='modal-content'>
+        <div class="modalHead">
+            <div class='text'>
+                Xiaomi Yeelight LED Smart Bulb
+            </div>
+            <div class='data'>
+
+                <div class='icon-sun-big'></div>
+            </div>
+        </div>
+        <div class='status'>
+            Включится в 17:00
+        </div>
+        <div class='buttons'>
+            <div class='btn yellow'>Вручную</div>
+            <div class='btn'>Дневной свет</div>
+            <div class='btn'>Вечерний свет</div>
+            <div class='btn'>Рассвет</div>
+        </div>
+        <div class='slidercontainer1'>
+            <input id='tempSlider1' type="range" min="-10" max="30" value="23" class="slider">
+            <div class='left-text icon-sun-w'></div>
+            <div class='right-text icon-sun-w'></div>
         </div>
 
     </div>

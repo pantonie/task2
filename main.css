@@ -56,6 +56,12 @@ a {
 .icon-sun-y {
     content: url(./assets/icon_sun_2@1x.png);
 }
+.icon-sun-w {
+    content: url(./assets/icon_sun_min.png);
+}
+.icon-sun-big {
+    content: url(./assets/icon_sun@2x.png);
+}
 .icon-scheduled {
     content: url(./assets/icon_scheduled@1x.png);
 }
@@ -286,7 +292,7 @@ footer span {
 .modal-content {
     width: 630px;
     background-color: #fefefe;
-    margin: 15% auto; /* 15% from the top and centered */
+    margin: 10% auto; /* 15% from the top and centered */
     padding: 20px;
     border: 1px solid #888;
     border-radius: 20px;
@@ -314,11 +320,30 @@ footer span {
     align-items: center;
     color:#FFFFFF;
 }
+.slidercontainer1{
+    display: flex;
+    flex-direction: column;
+    width: 580px;
+    height: 60px;
+    background-image: linear-gradient(85deg, #FFE682 2%, #FF9E00 98%);
+    border-radius: 30px;
+    justify-content: center;
+    align-items: center;
+    color:#FFFFFF;
+}
 .slidercontainer .left-text{
     position: absolute;
     margin-left: -260px;
 }
 .slidercontainer .right-text{
+    position: absolute;
+    margin-left: 260px;
+}
+.slidercontainer1 .left-text{
+    position: absolute;
+    margin-left: -260px;
+}
+.slidercontainer1 .right-text{
     position: absolute;
     margin-left: 260px;
 }
@@ -354,4 +379,28 @@ input[type=range]::-webkit-slider-thumb{
 }
 .data .digits{
     font-size: 36px;
+}
+.dimmer-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.dimmer {
+    display: flex;
+    background-image: url(./assets/background.svg), url(./assets/Oval_copy1.png);/*, url(./assets/ovalCopy.png)*/
+    background-position: center center, center center;/*, 80% 80%*/
+    height: 221px;
+    width: 221px;
+    background-repeat: no-repeat;
+    justify-content: center;
+    align-items: center;
+    font-size: 66px;
+}
+
+.control {
+    background-image: url(./assets/Icons/icon_arrow.svg);
+    height: 7px;
+    width: 12px;
+    position: absolute;
+    transform: rotate(110deg) translate(-12px, -80px);
 }
