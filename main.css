@@ -6,6 +6,7 @@ html, body{
     padding: 0;
     display: block;
     font-weight: 600;
+    overflow-ч: hidden;
 }
 a {
     text-decoration: none;
@@ -64,6 +65,9 @@ a {
 }
 .icon-scheduled {
     content: url(./assets/icon_scheduled@1x.png);
+}
+.icon-menu {
+    content: url(./assets/icon_list_m.png);
 }
 /*Header*/
 header{
@@ -236,6 +240,7 @@ header .noopacity{
 .buttons {
     display: flex;
     align-items: center;
+    margin: 20px 0 20px 0;
 }
 .btn {
     padding: 7px 14px 7px 14px;
@@ -290,23 +295,40 @@ footer span {
 
 }
 .modal-content {
-    width: 630px;
+    width: 580px;
     background-color: #fefefe;
-    margin: 10% auto; /* 15% from the top and centered */
-    padding: 20px;
+    margin: 15% auto 20px auto; /* 15% from the top and centered */
+    padding: 25px;
     border: 1px solid #888;
     border-radius: 20px;
 }
 .modal-content .status{
     font-size: 14px;
     font-weight: normal;
+    margin-top: -12px;
 }
 
 .modal-buttons{
     display: flex;
     flex-direction: row;
     height: 40px;
-    margin-top: -13%;
+    justify-content: center;
+}
+.modal-buttons .btn {
+    width: 279px;
+    height: 46px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin: 0 8px 0 8px;
+    font-size: 18px;
+
+}
+.modal-buttons .btn:hover {
+    cursor: pointer
+}
+.modal-buttons .btn.yellow {
+    background-color: #FFCD00;
 }
 /*Slider*/
 .slidercontainer{
@@ -358,7 +380,7 @@ footer span {
 }
 input[type=range]::-webkit-slider-thumb{
     position:relative;
-    width: 60px;
+    width: 65px;
     height: 60px;
     -webkit-appearance: none;
     border: 3px solid rgb(231,164,13);
@@ -366,6 +388,7 @@ input[type=range]::-webkit-slider-thumb{
     border-radius: 50%;
     background: rgb(253,188,7);
     cursor: pointer;
+
 }
 /*Modal*/
 .modalHead{
@@ -395,6 +418,7 @@ input[type=range]::-webkit-slider-thumb{
     justify-content: center;
     align-items: center;
     font-size: 66px;
+    margin-top: 20px;
 }
 
 .control {
@@ -402,5 +426,161 @@ input[type=range]::-webkit-slider-thumb{
     height: 7px;
     width: 12px;
     position: absolute;
-    transform: rotate(110deg) translate(-12px, -80px);
+    transform: rotate(110deg) translate(-4px, -86px);
+}
+.horizontal-scroll{
+    display: flex;
+    flex-direction: row;
+    overflow-x: scroll;
+}
+/*--------------------------------Mobile-----------------------------*/
+@media screen and (max-width: 700px){
+    header {
+        justify-content: space-between;
+        margin: 20px;
+        height: 39px;
+        border: none;
+    }
+    header .logo {
+        margin: 0;
+    }
+    .main{
+        width: 100%;
+    }
+    .screen {
+        margin: 0 20px 0 20px;
+        display: block;
+        max-width: 630px;;
+        width: 90%;
+        height: 282px;
+        background-position: center center;
+    }
+    .info {
+        margin: 10px;
+    }
+    .greeting {
+        font-size: 18px;
+    }
+    .name .status {
+        font-size: 12px;
+    }
+    .scroll {
+        flex-direction: row;
+    }
+    .equip-status {
+        overflow-y: inherit;
+        overflow-x: scroll;
+        display: flex;
+    }
+    .temp .where{
+        font-size: 12px;
+    }
+    .temp .value {
+        font-size: 24px;
+    }
+    .cloud-drizzle {
+        width: 24px;
+        height: 24px;
+    }
+    .name {
+        padding: 20px;
+        width: 300px;
+    }
+    .scenarios {
+        width: 100%;
+        margin: 0;
+    }
+    .scenarios .content{
+        width: 100%;
+    }
+    .arrow-right {
+        transform: rotate(-90deg);
+        width: 10px;
+        height: 7px;
+        margin-left: 2px;
+    }
+    .favorite .header {
+        margin: -14px 0 0 20px;;
+    }
+    .favorite-equip {
+        margin-left: 13px;
+    }
+    .modalHead {
+        font-size: 18px;
+    }
+    .modal-content {
+        width: 292px;
+        padding: 20px;
+        height: 450px;
+    }
+    .modal-content .status {
+        font-size: 12px;
+    }
+    .modal-content .buttons .btn {
+        font-weight: normal;
+    }
+    .slidercontainer1 {
+        width: 60px;
+        height: 336px;
+        transform: translateX(111px);
+        background-image: linear-gradient(-5deg, #FFE682 2%, #FF9E00 98%);
+    }
+    .slidercontainer {
+        width: 60px;
+        height: 336px;
+        transform: translateX(111px);
+        background-image: linear-gradient(0deg, #068FFF 2%, #FFD800 51%, #F76B1C 100%);
+    }
+    .favorite .header .text {
+        margin-right: 39px;
+    }
+    .slider {
+        width: 336px;
+    }
+    .slider {
+        rotate: -90deg;
+    }
+    .modal-content .status {
+        margin-top: 5px;
+    }
+    .slidercontainer1 .left-text {
+        margin-left: 0;
+        margin-top: 130px;
+    }
+    .slidercontainer1 .right-text {
+        margin-left: 0;
+        margin-top: -130px;
+    }
+    .slidercontainer .left-text {
+        margin-left: 0;
+        margin-top: 130px;
+    }
+    .slidercontainer .right-text {
+        margin-left: 0;
+        margin-top: -130px;
+    }
+    .btn {
+        margin-left: 0;
+        margin-right: 10px;
+    }
+    .buttons {
+        overflow-x: scroll;
+        white-space: nowrap;
+        margin-top: 30px;
+    }
+    .modal-buttons {
+        flex-direction: column;
+        height:auto;
+        align-items: center;
+    }
+    .modal-buttons .btn {
+        width: 306px;
+        margin-bottom: 20px;
+    }
+    .data {
+        display: none;
+    }
+    .dimmer-container {
+        height: 370px;
+    }
 }
