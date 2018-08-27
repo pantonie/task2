@@ -758,25 +758,25 @@ input[type=range]::-moz-range-track {
 @supports (-ms-ime-align: auto){
     .slidercontainer .left-text {
         position: absolute;
-        margin-left: -510px;
+        margin-left: -520px;
         pointer-events: none;
     }
 
     .slidercontainer .right-text {
         position: absolute;
-        margin-left: 510px;
+        margin-left: 520px;
         pointer-events: none;
     }
 
     .slidercontainer1 .left-text {
         position: absolute;
-        margin-left: -510px;
+        margin-left: -520px;
         pointer-events: none;
     }
 
     .slidercontainer1 .right-text {
         position: absolute;
-        margin-left: 510px;
+        margin-left: 520px;
         pointer-events: none;
     }
 }
