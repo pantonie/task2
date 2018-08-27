@@ -447,21 +447,25 @@ footer span {
 .slidercontainer .left-text {
     position: absolute;
     margin-left: -260px;
+    pointer-events: none;
 }
 
 .slidercontainer .right-text {
     position: absolute;
     margin-left: 260px;
+    pointer-events: none;
 }
 
 .slidercontainer1 .left-text {
     position: absolute;
     margin-left: -260px;
+    pointer-events: none;
 }
 
 .slidercontainer1 .right-text {
     position: absolute;
     margin-left: 260px;
+    pointer-events: none;
 }
 
 .slider {
@@ -568,18 +572,22 @@ input[type=range]::-moz-range-track {
     .slidercontainer1 .left-text {
         margin-top: -49px;
         margin-left: -278px;
+        pointer-events: none;
     }
     .slidercontainer1 .right-text {
         margin-top: -49px;
         margin-left: 242px;
+        pointer-events: none;
     }
     .slidercontainer .left-text {
         margin-top: -42px;
         margin-left: -274px;
+        pointer-events: none;
     }
     .slidercontainer .right-text {
         margin-top: -42px;
         margin-left: 244px;
+        pointer-events: none;
     }
     .control{
         transform: rotate(110deg) translate(32px, 25px);
@@ -763,21 +771,25 @@ input[type=range]::-moz-range-track {
     .slidercontainer1 .left-text {
         margin-left: 0;
         margin-top: 130px;
+        pointer-events: none;
     }
 
     .slidercontainer1 .right-text {
         margin-left: 0;
         margin-top: -130px;
+        pointer-events: none;
     }
 
     .slidercontainer .left-text {
         margin-left: 0;
         margin-top: 130px;
+        pointer-events: none;
     }
 
     .slidercontainer .right-text {
         margin-left: 0;
         margin-top: -130px;
+        pointer-events: none;
     }
 
     .btn {
@@ -821,21 +833,25 @@ input[type=range]::-moz-range-track {
         .slidercontainer1 .right-text {
             margin-top: -187px;
             margin-left: -18px;
+            pointer-events: none;
         }
 
         .slidercontainer1 .left-text {
             margin-top: 90px;
             margin-left: -18px;
+            pointer-events: none;
         }
 
         .slidercontainer .left-text {
             margin-left: -13px;
             margin-top: 97px;
+            pointer-events: none;
         }
 
         .slidercontainer .right-text {
             margin-left: -15px;
             margin-top: -178px;
+            pointer-events: none;
         }
     }
 }
@@ -845,21 +861,25 @@ input[type=range]::-moz-range-track {
         .slidercontainer1 .right-text {
             margin-top: -187px;
             margin-left: 10px;/*-18px;*/
+            pointer-events: none;
         }
 
         .slidercontainer1 .left-text {
             margin-top: 90px;
             margin-left: 10px;/*-18px;*/
+            pointer-events: none;
         }
 
         .slidercontainer .left-text {
             margin-left: 18px;
             margin-top: 97px;
+            pointer-events: none;
         }
 
         .slidercontainer .right-text {
             margin-left: 15px;
             margin-top: -178px;
+            pointer-events: none;
         }
         .control{
             transform: rotate(110deg) translate(205px, -38px);
