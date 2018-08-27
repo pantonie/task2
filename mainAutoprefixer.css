@@ -638,8 +638,8 @@ input[type=range]::-moz-range-thumb {
 
 input[type=range]::-ms-thumb {
     position: relative;
-    width: 60px;
-    height: 60px;
+    width: 54px;
+    height: 54px;
     border: 3px solid rgb(231, 164, 13);
     box-shadow: 0 0 0 3px #FFFFFF;
     border-radius: 50%;
@@ -755,27 +755,31 @@ input[type=range]::-moz-range-track {
     }
 
 }
-/*@media screen and (-webkit-min-device-pixel-ratio:0){*/
-/*.slidercontainer1 .left-text {*/
-/*margin-top: -49px;*/
-/*margin-left: -278px;*/
-/*}*/
-/*.slidercontainer1 .right-text {*/
-/*margin-top: -49px;*/
-/*margin-left: 242px;*/
-/*}*/
-/*.slidercontainer .left-text {*/
-/*margin-top: -42px;*/
-/*margin-left: -274px;*/
-/*}*/
-/*.slidercontainer .right-text {*/
-/*margin-top: -42px;*/
-/*margin-left: 244px;*/
-/*}*/
-/*.control{*/
-/*transform: rotate(110deg) translate(32px, 25px);*/
-/*}*/
-/*}*/
+@supports (-ms-ime-align: auto){
+    .slidercontainer .left-text {
+        position: absolute;
+        margin-left: -510px;
+        pointer-events: none;
+    }
+
+    .slidercontainer .right-text {
+        position: absolute;
+        margin-left: 510px;
+        pointer-events: none;
+    }
+
+    .slidercontainer1 .left-text {
+        position: absolute;
+        margin-left: -510px;
+        pointer-events: none;
+    }
+
+    .slidercontainer1 .right-text {
+        position: absolute;
+        margin-left: 510px;
+        pointer-events: none;
+    }
+}
 
 /*--------------------------------Mobile-----------------------------*/
 @media screen and (max-width: 700px) {
@@ -1073,6 +1077,36 @@ input[type=range]::-moz-range-track {
             -webkit-transform: rotate(110deg) translate(205px, -38px);
             -ms-transform: rotate(110deg) translate(205px, -38px);
             transform: rotate(110deg) translate(205px, -38px);
+        }
+    }
+}
+@supports (-ms-ime-align: auto){
+    @media screen and (max-width: 700px){
+        .slidercontainer1 .left-text {
+            margin-left: 0;
+            margin-top: 275px;
+            pointer-events: none;
+        }
+
+        .slidercontainer1 .right-text {
+            margin-left: 0;
+            margin-top: -275px;
+            pointer-events: none;
+        }
+
+        .slidercontainer .left-text {
+            margin-left: 0;
+            margin-top: 275px;
+            pointer-events: none;
+        }
+
+        .slidercontainer .right-text {
+            margin-left: 0;
+            margin-top: -275px;
+            pointer-events: none;
+        }
+        .modal-content {
+            height: auto;
         }
     }
 }

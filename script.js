@@ -109,6 +109,17 @@ slider.addEventListener('input', function(e){
         "border-radius: 50%;"+
         "background: rgb("+ result.join()+");"+
         "cursor: pointer;"+
+        "}"+
+        "#tempSlider::-ms-thumb {"+
+        "position:relative;"+
+        "width: 54px;"+
+        "height: 54px;"+
+        "-ms-appearance: none;"+
+        "border: 3px solid rgb(231,164,13);"+
+        "box-shadow: 0 0 0 3px #FFFFFF;"+
+        "border-radius: 50%;"+
+        "background: rgb("+ result.join()+");"+
+        "cursor: pointer;"+
         "}"
     ;
 
@@ -164,6 +175,17 @@ slider1.addEventListener('input', function(e){
         "border-radius: 50%;"+
         "cursor: pointer;"+
         "background: rgb("+ result.join()+");"+
+        "}"+
+        "#tempSlider1::-ms-thumb{"+
+        "position:relative;"+
+        "width: 54px;"+
+        "height: 54px;"+
+        "-ms-appearance: none;"+
+        "border: 3px solid rgb(231,164,13);"+
+        "box-shadow: 0 0 0 3px #FFFFFF;"+
+        "border-radius: 50%;"+
+        "background: rgb("+ result.join()+");"+
+        "cursor: pointer;"+
         "}"
 
 })
